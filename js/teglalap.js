@@ -13,8 +13,9 @@ function calcKT() {
     let kerulet = 2 * (longerSide + shorterSide);
     let terulet = longerSide * shorterSide;
 
+
     if (longerSide <= 0 || shorterSide <= 0) {
-        alert("Egy téglalap oldala nem lehet 0 vagy negatív szám!");
+        alert("A téglalap oldala nem lehet 0 vagy negatív szám!");
     } else {
         longS.innerHTML = longerSide;
         shortS.innerHTML = shorterSide;
@@ -22,8 +23,7 @@ function calcKT() {
         K.innerHTML = kerulet;
         T.innerHTML = terulet;
 
-
+        document.getElementById("color-div").style.width = longerSide.toString() + "px";
+        document.getElementById("color-div").style.height = shorterSide.toString() + "px";
     }
-
-
 }
